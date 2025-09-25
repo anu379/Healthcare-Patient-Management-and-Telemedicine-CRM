@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mentor__c</fullName>
+    <label>Mentor</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>check the mentors list that atleast should like &quot;anushapeetha19@gmail.com&quot;</errorMessage>
+        <filterItems>
+            <field>Mentor__c.M_Email__c</field>
+            <operation>equals</operation>
+            <value>anushapeetha19@gmail.com</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Mentor__c</referenceTo>
+    <relationshipLabel>Students</relationshipLabel>
+    <relationshipName>Students</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

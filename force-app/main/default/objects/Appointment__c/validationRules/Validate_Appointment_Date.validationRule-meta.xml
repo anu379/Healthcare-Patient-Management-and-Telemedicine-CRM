@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Appointment_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>Appointment_Date__c &lt; NOW()</errorConditionFormula>
+    <errorDisplayField>Appointment_Date__c</errorDisplayField>
+    <errorMessage>Appointment date cannot be in the past</errorMessage>
+</ValidationRule>

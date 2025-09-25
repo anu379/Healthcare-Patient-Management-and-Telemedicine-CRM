@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Patient_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>Contact_Number__c  = &apos;10&apos;</errorConditionFormula>
+    <errorDisplayField>Contact_Number__c</errorDisplayField>
+    <errorMessage>please enter a valid contact number</errorMessage>
+</ValidationRule>

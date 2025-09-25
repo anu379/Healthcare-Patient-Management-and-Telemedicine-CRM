@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Telemedicine_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Patient__c) || ISBLANK(Doctor__c)</errorConditionFormula>
+    <errorMessage>Patient and Doctor must be selected before saving a Telemedicine session.</errorMessage>
+</ValidationRule>

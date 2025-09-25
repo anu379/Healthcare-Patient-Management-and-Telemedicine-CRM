@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outpatient</fullName>
+    <active>true</active>
+    <description>Patients visiting for consultation</description>
+    <label>Outpatient</label>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Admitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discharged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In treatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>outpatient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

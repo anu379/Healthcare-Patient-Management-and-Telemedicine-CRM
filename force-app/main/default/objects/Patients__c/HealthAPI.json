@@ -1,0 +1,33 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "HealthAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/patients": {
+      "get": {
+        "summary": "Get all patients",
+        "responses": {
+          "200": {
+            "description": "List of patients",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Patient" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Patient": {
+      "type": "object",
+      "properties": {
+        "First_Name": { "type": "string" },
+        "Last_Name": { "type": "string" },
+        "Status": { "type": "string" }
+      }
+    }
+  }
+}

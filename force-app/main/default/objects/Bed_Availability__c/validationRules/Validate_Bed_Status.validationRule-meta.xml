@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Bed_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(bed_status__c, &quot;Occupied&quot;)</errorConditionFormula>
+    <errorDisplayField>bed_status_c__c</errorDisplayField>
+    <errorMessage>Cannot assign patient. Bed is already occupied</errorMessage>
+</ValidationRule>
